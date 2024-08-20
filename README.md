@@ -29,7 +29,7 @@ The `docker-compose.yml` file defines two services:
 - Uses latest WordPress image
 - Depends on MySQL service
 - Environment variables set to connect to MySQL database
-- Port 8080 on host mapped to port 80 in container
+- Port 5500 on host mapped to port 80 in container
 - Volume attached for WordPress files: `wordpress_data:/var/www/html`
 
 ## Volumes
