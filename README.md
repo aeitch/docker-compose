@@ -14,8 +14,13 @@ Both containers have volumes attached for data persistence.
 
 ## Quick Start
 1. Clone this repository:
-2. Start the containers:
-3. Access WordPress at `http://localhost:5500`
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+   
+# Start the containers:
+docker-compose up -d
+   
+5. Access WordPress at `http://localhost:5500`
 
 ## Docker Compose Configuration
 The `docker-compose.yml` file defines two services:
@@ -48,6 +53,9 @@ You can customize the setup by modifying the `docker-compose.yml` file:
 
 ## Backup
 To backup your data, you can copy the contents of the Docker volumes. The volume locations can be found using:
+docker volume inspect wordpress-docker_db_data
+docker volume inspect wordpress-docker_wordpress_data
+
 ## Stopping the Services
 
 To stop the services, run:
